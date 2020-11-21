@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Choropleth Map</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <!--main stylesheet-->
+		<link rel="stylesheet" href="css/style.css" />
+    </head>
+    
+    <body>
+        <!--libraries-->
+        <script src="lib/d3.v4.5.js"></script>
+        <script src="lib/topojson.js"></script>
+        <script src="lib/queue.js"></script>
+
+        <!-- Dropdown div -->
+        <div id="option"></div>
+
+        <!-- Map Description panel -->
+        <fieldset id="description">
+            <legend>Description</legend>
+            <p><b>With the publication of much of the U.S. Census data from the 2020 census, it is worth taking a look at some of the demographic trends since 2010.</b><br><br> 
+                As a whole, the United States has grown in population since 2010; by 19.5 million according to the U.S. Census Bureau. <b>Use the dropdown menu above</b> to show different kinds of census data on the map. As you may notice, the rate of population change actually decreases in a few states, meaning those states saw a decline in their population over the last decade. <b>The chart below</b> reflects these negative values with an orange bar that goes the opposite direction on the X axis. <br><br>Play around with the data using the dropdown. <b>What trends do you observe?</b><br><br><br><br><i>Data source: Census.gov, Natural Earth</i></p>
+        </fieldset>
+
+        <!-- US States Map -->
+        <div id="map"></div>
+
+        <!-- Chart -->
+        <svg id="chart"></svg>
+        
+        <!--link to main javascript file-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

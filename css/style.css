@@ -1,0 +1,96 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+svg {
+    position: absolute;
+}
+
+.gratBackground {
+    fill: #D5E3FF;
+    border: medium solid #000;
+}
+
+.gratLines {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+#map svg {
+    float: left;
+    border: medium solid #999;
+    position: absolute;
+}
+
+rect.positive {
+    fill: steelblue;
+}
+
+rect.negative {
+    fill: darkorange;
+}
+
+.axis text {
+    font: 12px sans-serif;
+    fill: black;
+}
+
+.axis.y text {
+    text-anchor: end;
+}
+
+#chart {
+    top: 50%;
+    right: 6%;
+    position: absolute;
+}
+
+.regions {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+    stroke-linecap: round;
+}
+
+.dropdown {
+    width: 30%;
+    float: right;
+}
+
+.infolabel {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    color: #000;
+    background-color: #fff;
+    border: solid thin #000;
+    border-width: 2px;
+    padding: 5px;
+}
+
+    .infolabel h1 {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        line-height: 1em;
+    }
+
+    .infolabel b {
+        float: left;
+    }
+
+.labelname {
+    display: inline-block;
+    float: right;
+    margin: -25px 0px 0px 40px;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+}
+
+#description {
+    width: 40%;
+    float: right;
+    clear: both;
+    margin-top: 2%;
+}
